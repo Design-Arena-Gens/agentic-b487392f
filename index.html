@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>किसान और मुर्गी की कहानी</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .story-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .story-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .story-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .story-content {
+            padding: 40px;
+        }
+
+        .scene {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            border-radius: 15px;
+            border-left: 5px solid #f5576c;
+        }
+
+        .scene:nth-child(2) {
+            animation-delay: 0.3s;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            border-left-color: #667eea;
+        }
+
+        .scene:nth-child(3) {
+            animation-delay: 0.6s;
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            border-left-color: #19547b;
+        }
+
+        .scene:nth-child(4) {
+            animation-delay: 0.9s;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            border-left-color: #ff9a9e;
+        }
+
+        .scene p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+        }
+
+        .emoji {
+            font-size: 3em;
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .moral {
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            font-size: 1.3em;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            .story-header h1 {
+                font-size: 1.8em;
+            }
+
+            .scene p {
+                font-size: 1em;
+            }
+
+            .story-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="story-container">
+        <div class="story-header">
+            <h1>🌾 किसान और मुर्गी की कहानी 🐔</h1>
+        </div>
+
+        <div class="story-content">
+            <div class="scene">
+                <span class="emoji">👨‍🌾🍳</span>
+                <p>किसान अपने खेत में बैठा था और मुर्गी के सारे अंडों का ऑमलेट बनाकर खा गया। लेकिन फिर भी उसका पेट नहीं भरता। किसान ने सोचा, "मुझे और अंडों की जरूरत है।"</p>
+            </div>
+
+            <div class="scene">
+                <span class="emoji">😠🐔🥚</span>
+                <p>अब किसान मुर्गी के पास गया और उसे डराकर बहुत सारे अंडे देने को कह दिया। मुर्गी डर के मारे अंडे देती गई। किसान ने उन अंडों से एक बड़ा ऑमलेट बर्गर बनाया और खा लिया।</p>
+            </div>
+
+            <div class="scene">
+                <span class="emoji">🤢😤</span>
+                <p>इस बार उसका पेट भर गया, लेकिन साथ ही उसे बहुत दर्द होने लगा। गुस्से में किसान मुर्गी को मारकर भगा देता है।</p>
+            </div>
+
+            <div class="scene">
+                <span class="emoji">😢🐔💔</span>
+                <p>मुर्गी रोने लगती है।</p>
+            </div>
+
+            <div class="moral">
+                <p>⚠️ सीख: लालच और क्रूरता का फल दुःख होता है</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
